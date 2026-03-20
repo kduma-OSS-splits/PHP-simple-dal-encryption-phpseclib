@@ -73,7 +73,7 @@ test('decrypt rejects truncated payload', function () {
     $key = new RsaAlgorithm('test', $privateKey);
 
     // Header says key is 256 bytes but payload is too short
-    $key->decrypt(pack('n', 256) . 'short');
+    $key->decrypt(pack('n', 256).'short');
 })->throws(DecryptionException::class, 'truncated');
 
 test('encrypts large data via hybrid scheme', function () {

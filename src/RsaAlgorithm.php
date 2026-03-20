@@ -15,6 +15,7 @@ class RsaAlgorithm implements EncryptionAlgorithmInterface
     public const int ALGORITHM = 4;
 
     private const int AES_KEY_LENGTH = 32; // AES-256
+
     private const int IV_LENGTH = 16;
 
     public int $algorithm {
